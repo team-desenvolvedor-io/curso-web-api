@@ -243,9 +243,11 @@ cd MinhaAPI
 code .
 ```
 
+![image](https://user-images.githubusercontent.com/5068797/160082561-a32e6dfd-6ac3-44c0-b23c-1e8638bb8cc6.png)
+
 ---
 
-### Utilizando Visual Studio 2019 ou 2022 siga os passos:
+### Utilizando Visual Studio 2022 siga os passos:
 
 #### Criação do projeto:
 
@@ -405,7 +407,56 @@ namespace MinhaAPI.Controllers
 
 ### O arquivo launchSettings.json já vem preparado para HTTP e HTTPS assim como rodar o projeto via IISExpress ou Kestrel
 
+> Nesta versão a API já vem preparada para chamar o Swagger como página inicial.
+
+```json
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {                                  // Configuracoes do IIS (apenas VS 2022)
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:48782",
+      "sslPort": 44373
+    }
+  },
+  "profiles": { 
+    "MinhaAPI": {                                   // Perfil para rodar via Kestrel
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7222;http://localhost:5222",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "IIS Express": {                                 // Perfil para rodar via IISExpress
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
+
+```
+---
+
+### Ao executar o projeto a primeira tela é esta:
+
+![image](https://user-images.githubusercontent.com/5068797/160081691-9bbf3dfc-3725-417a-92e6-731576c37ea3.png)
+
+### Expanda o método GET > Clique em Try it out > Clique em Execute, o resultado será a chamada da Action GET da controller WeatherForecast
+
+> Repare no retorno do resultado em JSON
+
+![image](https://user-images.githubusercontent.com/5068797/160082297-45a83dcb-5fe3-4c28-8770-624520b6c746.png)
+
+--- 
 
 #### Entendendo estas sutis mudanças você não terá problemas em estudar utilizando o ASP.NET 6 em seu projeto.
 
-#### Em caso de dúvidas baixe o nosso projeto em .NET 6 e compare com o seu código [Projetos para Donwload](https://desenvolvedor.io/curso/dominando-o-asp-net-mvc-core/links-materiais) 
+#### Em caso de dúvidas baixe o nosso projeto em .NET 6 e compare com o seu código [Projetos para Donwload](https://desenvolvedor.io/curso/rest-com-asp-net-core-webapi/links-materiais) 
