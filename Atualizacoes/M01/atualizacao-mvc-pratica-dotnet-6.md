@@ -11,7 +11,7 @@ dotnet new --list
 ```
 > Resultado
 
-```
+```ssh
 These templates matched your input:
 
 Template Name                                 Short Name           Language    Tags
