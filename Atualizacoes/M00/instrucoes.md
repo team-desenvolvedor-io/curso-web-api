@@ -6,17 +6,29 @@
 #### Este curso foi gravado utilizando ASP.NET 2.2, mas não se preocupe, tudo que você irá aprender ainda é válido e feito exatamente da mesma maneira.
 #### Os fundamentos do ASP.NET não mudam confome as novas versões, houveram pequenas alterações e estas são:
   - A classe Startup.cs virou Program.cs
-  - O método de registro do middleware do MVC mudou de nome
+  - O método de registro do middleware das controllers mudou de nome
   - A forma de registrar rotas passou por uma pequena mudança na 3.1, 5.0 e 6.0
 
 #### Você poderá realizar este curso utilizando a versão mais nova do ASP.NET sem problemas, o curso dará suporte nos pontos de mudanças.
 #### Além disto você terá acesso aos materiais atualizados e o fórum de suporte conforme os detalhes a seguir.
 
+---
+
+### Arquitetura do projeto:
+
+#### Este projeto conta com uma arquitetura em camadas (negócios e dados) que é entregue já desenvolvida, pois o foco do curso é na API, para ter acesso a estas camadas da arquitetura do projeto basta baixar o material do curso e utilizar.
+
+---
+
+### Projeto em Angular:
+
+#### Durante o curso utilizaremos uma demo em Angular para simular cadastros, upload de imagem e etc, para oferecer uma experiência real de como desenvolver uma API para um front-end. O projeto em Angular está disponível para donwload, caso não conheça Angular não se preocupe, não é obrigatório rodar, é apenas uma demo para enriquecer o cenário de uso da API.
+
 --- 
 
 ### Materiais:
 
-#### Todos os materiais possuem atualizações para as novas versões do .NET acesse [este link](https://desenvolvedor.io/curso/dominando-o-asp-net-mvc-core/links-materiais) para ter acesso aos materiais.
+#### Todos os materiais possuem atualizações para as novas versões do .NET acesse [este link](https://desenvolvedor.io/curso/rest-com-asp-net-core-webapi/links-materiais) para ter acesso aos materiais.
 
 #### Sempre que possuir alguma dúvida compare os materiais com o seu projeto (verifique sempre a versão que está utilizando)
 
